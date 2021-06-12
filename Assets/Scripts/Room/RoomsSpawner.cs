@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 namespace Room
 {
@@ -13,19 +12,19 @@ namespace Room
         
         private Room[,] spawnedRooms;
 
-        private void Start()
+        public Room[,] SpawnedRooms => spawnedRooms;
+
+        private void Awake()
         {
             spawnedRooms = new Room[11, 11];
-            spawnedRooms[5, 5] = StartingRoom;
-            
-            ActivateDoor(StartingRoom);
+            spawnedRooms[5, 5] = Instantiate(StartingRoom);
 
             for (int i = 0; i < 12; i++)
             {
                 PlaceOneRoom();
             }
         }
-        
+
         private void PlaceOneRoom()
         {
             HashSet<Vector2Int> vacantPlaces = new HashSet<Vector2Int>();
@@ -46,8 +45,6 @@ namespace Room
             }
             
             Room newRoom = Instantiate(RoomPrefabs[Random.Range(0, RoomPrefabs.Length)]);
-            
-            ActivateDoor(newRoom);
 
             Vector2Int position = vacantPlaces.ElementAt(Random.Range(0, vacantPlaces.Count));
             newRoom.transform.position = new Vector3((position.x - 5) * 18, (position.y - 5) * 10, 0);
@@ -55,6 +52,7 @@ namespace Room
             ConnectToSomething(newRoom, position);
             
             spawnedRooms[position.x, position.y] = newRoom;
+            newRoom.gameObject.SetActive(false);
         }
 
         private static void ActivateDoor(Room newRoom)

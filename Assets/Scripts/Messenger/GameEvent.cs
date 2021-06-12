@@ -4,5 +4,6 @@ using UnityEngine;
 
 public static class GameEvent
 {
-    public const string ONSETNEWCELL = "ONSETNEWCELLDATA";
+    public const string STARTCHANGEROOM = "STARTCHANGEROOM";
+    public const string STOPCHANGEROOM = "STOPCHANGEROOM";
 }
