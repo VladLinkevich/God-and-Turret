@@ -250,3 +250,103 @@ Received Import Request.
 Start importing Assets/Prefabs/Rooms/NavMesh-NavMesh.asset using Guid(ac2c824373b6c1244b18d72aee66974f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe4e9d87a64b186469426f2c3ca4779') in 0.006626 seconds
   Import took 0.012541 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003005 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1842 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.5 MB.
+System memory in use after: 86.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 2.507400 ms (FindLiveObjects: 0.210700 ms CreateObjectMapping: 0.065500 ms MarkObjects: 2.090400 ms  DeleteObjects: 0.139600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 197.583073 seconds.
+  path: Assets/Prefabs/Rooms/FirstAttackedRoom.prefab
+  artifactKey: Guid(cd25a25d8842df54ea2b97574bc9e0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/FirstAttackedRoom.prefab using Guid(cd25a25d8842df54ea2b97574bc9e0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c285463c4668e0c98594477abbe1ea3c') in 0.033261 seconds
+  Import took 0.039529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.347966 seconds.
+  path: Assets/Prefabs/Rooms/SecondAttackedRoom.prefab
+  artifactKey: Guid(1521c470e7963c34389f19397a6066ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/SecondAttackedRoom.prefab using Guid(1521c470e7963c34389f19397a6066ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1e3cc03870813fe0b404322c999f1c') in 0.007129 seconds
+  Import took 0.010664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.727276 seconds.
+  path: Assets/Prefabs/Rooms/StartRoom.prefab
+  artifactKey: Guid(0797e670e2ccb86498140b5303ff7399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/StartRoom.prefab using Guid(0797e670e2ccb86498140b5303ff7399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12464b14915bdc97bc15a7e9980d0cdd') in 0.008226 seconds
+  Import took 0.011826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055268 seconds.
+  path: Assets/Prefabs/Rooms/StartRoom.prefab
+  artifactKey: Guid(0797e670e2ccb86498140b5303ff7399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/StartRoom.prefab using Guid(0797e670e2ccb86498140b5303ff7399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12464b14915bdc97bc15a7e9980d0cdd') in 0.006744 seconds
+  Import took 0.010545 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1842 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.5 MB.
+System memory in use after: 86.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2311.
+Total: 2.317900 ms (FindLiveObjects: 0.226900 ms CreateObjectMapping: 0.090700 ms MarkObjects: 1.879900 ms  DeleteObjects: 0.119400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.338379 seconds.
+  path: Assets/Prefabs/Rooms/SecondAttackedRoom.prefab
+  artifactKey: Guid(1521c470e7963c34389f19397a6066ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/SecondAttackedRoom.prefab using Guid(1521c470e7963c34389f19397a6066ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13d20bd3906f65f0c03e2f589f0085a9') in 0.036004 seconds
+  Import took 0.040891 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002263 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1842 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.5 MB.
+System memory in use after: 86.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 2.232400 ms (FindLiveObjects: 0.240400 ms CreateObjectMapping: 0.119100 ms MarkObjects: 1.761800 ms  DeleteObjects: 0.110400 ms)
+

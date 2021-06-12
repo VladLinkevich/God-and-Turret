@@ -1151,6 +1151,10 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[5].Array.data[16].Y
       value: -30000100
       objectReference: {fileID: 0}
+    - target: {fileID: 5280755573539402336, guid: bff99f933589b9d489c0f5cbd9b1a597, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: ac2c824373b6c1244b18d72aee66974f, type: 2}
     - target: {fileID: 6228951010295876765, guid: bff99f933589b9d489c0f5cbd9b1a597, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 60
