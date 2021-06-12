@@ -1,7 +1,10 @@
-﻿namespace Enemy
+﻿using System;
+using UnityEngine;
+
+namespace Enemy
 {
-    public class Enemy
+    public abstract class Enemy : MonoBehaviour
     {
-        
+        public abstract EnemyType Type { get; }
     }
 }

@@ -6,16 +6,25 @@ namespace Enemy
 {
     public class EnemyFactory : MonoBehaviour
     {
-        public GameObject Parent;
+        public Transform Parent;
         public List<EnemyCreateInfo> Infos;
-        
+
+        private List<Enemy> _enemies;
+
         public void Awake()
         {
+            _enemies = new List<Enemy>();
+            
             foreach (var info in Infos)
             {
                 for (int i = 0; i < info.Count; ++i)
                 {
-                    //Instantiate()
+                    Enemy enemy = Instantiate(info.Prefab, Parent)
+                        .GetComponent<Enemy>();
+                    
+                    enemy.gameObject.SetActive(false);
+                    
+                    _enemies.Add(enemy);
                 }
             }
         }
@@ -25,6 +34,6 @@ namespace Enemy
     public struct EnemyCreateInfo
     {
         public int Count;
-        public Enemy prefab;
+        public Enemy Prefab;
     }
 }

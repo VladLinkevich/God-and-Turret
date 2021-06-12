@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -7674063145037166836
     second: Mobatlas_4
+  - first:
+      213: 2914651278956047677
+    second: Mobatlas_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -230,6 +233,27 @@ TextureImporter:
       bones: []
       spriteID: c0784208a30408590800000000000000
       internalID: -7674063145037166836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobatlas_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d205e45ebe27820800000000000000
+      internalID: 2914651278956047677
       vertices: []
       indices: 
       edges: []

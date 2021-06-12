@@ -7,6 +7,8 @@ namespace Room
 {
     public class RoomsSpawner : MonoBehaviour
     {
+        public Transform Parent;
+        
         public Room[] RoomPrefabs;
         public Room StartingRoom;
         
@@ -17,7 +19,7 @@ namespace Room
         private void Awake()
         {
             spawnedRooms = new Room[11, 11];
-            spawnedRooms[5, 5] = Instantiate(StartingRoom);
+            spawnedRooms[5, 5] = Instantiate(StartingRoom, Parent);
 
             for (int i = 0; i < 12; i++)
             {
@@ -44,7 +46,7 @@ namespace Room
                 }
             }
             
-            Room newRoom = Instantiate(RoomPrefabs[Random.Range(0, RoomPrefabs.Length)]);
+            Room newRoom = Instantiate(RoomPrefabs[Random.Range(0, RoomPrefabs.Length)], Parent);
 
             Vector2Int position = vacantPlaces.ElementAt(Random.Range(0, vacantPlaces.Count));
             newRoom.transform.position = new Vector3((position.x - 5) * 18, (position.y - 5) * 10, 0);
