@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 0}
   TurretTransform: {fileID: 0}
+  defaultDistance: 1
 --- !u!1001 &588498862037936883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21,6 +22,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3824655764134820737, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 4063472643385902477}
+    - target: {fileID: -2238254320828619751, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 4063472643385902477}
+    - target: {fileID: -2238254320828619751, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: IdleDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: -2150425547003368890, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
       propertyPath: Enemy
       value: 
@@ -29,6 +42,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2914651278956047677, guid: a116c4dca8d8d3a41aef14926efef38b, type: 3}
+    - target: {fileID: 5033269459861646890, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 4063472643385902477}
     - target: {fileID: 6862599553025483991, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
       propertyPath: m_RootOrder
       value: 0

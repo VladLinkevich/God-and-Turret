@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 namespace Enemy.EnemyState
 {
     public class EnemyFollowState : EnemyState
     {
+        public NavMeshAgent MeshAgent;
+        
         public override void EnterState()
         {
-            Debug.Log("Enter Idle");
-
+            MeshAgent.updateRotation = false;
+            MeshAgent.updateUpAxis = false;
+            
+            Debug.Log("Enter Follow");
         }
 
         public override void ExitState()
-        {            Debug.Log("Enter Idle");
-
+        {
+            Debug.Log("Exit Follow");
         }
 
-        public override void Update()
+        public override void FixedUpdate()
         {
-            Debug.Log("Enter Idle");
-      
-
+            MeshAgent.SetDestination(_enemy.Target.position);
         }
     }
 }
