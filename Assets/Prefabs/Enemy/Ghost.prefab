@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4bbfb01bee41918fe5ca6f0dfc8900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 0}
+  TurretTransform: {fileID: 0}
 --- !u!1001 &588498862037936883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19,6 +21,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2150425547003368890, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 4063472643385902477}
     - target: {fileID: 1800042580464112674, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
       propertyPath: m_Sprite
       value: 

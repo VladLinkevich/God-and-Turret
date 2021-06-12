@@ -236,6 +236,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1354120263 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3104994517702239092, guid: 4d0c20c3768005a45ab445609fd00135, type: 3}
+  m_PrefabInstance: {fileID: 5784627244746559197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1496948197 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7908720122525361067, guid: 4d0c20c3768005a45ab445609fd00135, type: 3}
@@ -247,6 +252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435fa8bb03982114899b4118609d2ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1553150355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3844003778912538464, guid: 0634e801b7d410f4ab461111f9754787, type: 3}
+  m_PrefabInstance: {fileID: 3844003780662777931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2017786043
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +373,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parent: {fileID: 68430013}
+  PlayerTransform: {fileID: 1354120263}
+  TurretTransform: {fileID: 1553150355}
   Infos:
   - Count: 10
     Prefab: {fileID: 7377476607136381119, guid: db5f5d524f8eff64286867d89e636803, type: 3}

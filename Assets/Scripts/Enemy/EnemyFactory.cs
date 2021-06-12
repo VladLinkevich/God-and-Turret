@@ -7,6 +7,9 @@ namespace Enemy
     public class EnemyFactory : MonoBehaviour
     {
         public Transform Parent;
+        public Transform PlayerTransform;
+        public Transform TurretTransform;
+        
         public List<EnemyCreateInfo> Infos;
 
         private List<Enemy> _enemies;
@@ -23,6 +26,9 @@ namespace Enemy
                         .GetComponent<Enemy>();
                     
                     enemy.gameObject.SetActive(false);
+
+                    enemy.PlayerTransform = PlayerTransform;
+                    enemy.TurretTransform = TurretTransform;
                     
                     _enemies.Add(enemy);
                 }
