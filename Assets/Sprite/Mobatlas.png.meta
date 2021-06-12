@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: 1677817113448104370
     second: Mobatlas_0
+  - first:
+      213: 1803367390703474053
+    second: Mobatlas_1
+  - first:
+      213: -2375839952412854949
+    second: Mobatlas_2
+  - first:
+      213: -66890688746728584
+    second: Mobatlas_3
+  - first:
+      213: -7674063145037166836
+    second: Mobatlas_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,6 +146,90 @@ TextureImporter:
       bones: []
       spriteID: 2b1452576cdc84710800000000000000
       internalID: 1677817113448104370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobatlas_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58557625619d60910800000000000000
+      internalID: 1803367390703474053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobatlas_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b553049a622570fd0800000000000000
+      internalID: -2375839952412854949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobatlas_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8735872e54b521ff0800000000000000
+      internalID: -66890688746728584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobatlas_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0784208a30408590800000000000000
+      internalID: -7674063145037166836
       vertices: []
       indices: 
       edges: []

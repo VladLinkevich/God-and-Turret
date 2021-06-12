@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Player;
 using UnityEngine;
 
 namespace Room
@@ -41,7 +42,7 @@ namespace Room
         private void StartChangePlayRoom(Direction direction)
         {
             if (_changeDirection != Direction.None) return;
-            
+
             _changeDirection = direction;
             
             SelectedDirection();
