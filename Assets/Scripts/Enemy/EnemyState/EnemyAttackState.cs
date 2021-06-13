@@ -23,7 +23,7 @@ namespace Enemy.EnemyState
 
         public override void ExitState()
         {        
-            Debug.Log("Exit Attack");
+            //Debug.Log("Exit Attack");
         }
 
         public override void FixedUpdate()

@@ -14,6 +14,8 @@ namespace Enemy.EnemyType
         private void OnEnable()
         {
             _target = TurretTransform;
+            
+            base.OnEnable();
         }
     }
 }

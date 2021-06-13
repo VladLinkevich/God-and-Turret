@@ -10,14 +10,14 @@ namespace Enemy.EnemyState
         
         public override void EnterState()
         {
-            Debug.Log("Enter Idle");
+            //Debug.Log("Enter Idle");
 
             _startTime = Time.time;
         }
 
         public override void ExitState()
         {
-            Debug.Log("Exit Idle");
+            //Debug.Log("Exit Idle");
             
         }
 

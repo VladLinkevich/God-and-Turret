@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using Game;
+using UnityEngine;
 
 namespace Enemy
 {
@@ -14,6 +16,16 @@ namespace Enemy
         protected Transform _target;
 
         public Transform Target => _target;
+
+        public void OnEnable()
+        {
+            GameHandler.Instance.AddActiveEnemy(this);
+        }
+
+        private void OnDisable()
+        {
+            GameHandler.Instance.RemoveActiveEnemy(this);
+        }
 
         public abstract void Attack(Vector3 target);
     }

@@ -310,6 +310,8 @@ GameObject:
   - component: {fileID: 2084023025}
   - component: {fileID: 2084023026}
   - component: {fileID: 2084023027}
+  - component: {fileID: 2084023028}
+  - component: {fileID: 2084023029}
   m_Layer: 0
   m_Name: Handler
   m_TagString: Untagged
@@ -380,6 +382,35 @@ MonoBehaviour:
     Prefab: {fileID: 7377476607136381119, guid: db5f5d524f8eff64286867d89e636803, type: 3}
   - Count: 10
     Prefab: {fileID: 4063472643385902477, guid: de9088243cd0d2a42b2a9a5dd2e8aa17, type: 3}
+--- !u!114 &2084023028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084023023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161f1c6ab6cf4e544aae9ab00a13df7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factory: {fileID: 2084023027}
+  maxEnemyCount: 5
+  minEnemyCount: 3
+  maxDurationBetweenSpawn: 4
+  minDurationBetweenSpawn: 2
+--- !u!114 &2084023029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084023023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29e62ec48bfc8743a23672404c43720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3844003780662777931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,8 +523,16 @@ PrefabInstance:
       propertyPath: Turret
       value: 
       objectReference: {fileID: 2029950764}
+    - target: {fileID: 4379121673606289020, guid: 4d0c20c3768005a45ab445609fd00135, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6188974358522636100, guid: 4d0c20c3768005a45ab445609fd00135, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715770259762979691, guid: 4d0c20c3768005a45ab445609fd00135, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []

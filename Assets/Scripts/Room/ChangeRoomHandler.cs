@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using Enemy;
+using Game;
 using Player;
 using UnityEngine;
 
@@ -9,10 +11,11 @@ namespace Room
     {
         private Camera _camera;
 
-        private Vector2Int _lastPostion;
+        private Vector2Int _lastPosition;
         private Vector2Int _currentPosition;
         private Direction _changeDirection;
-        
+
+        private EnemySpawner _enemySpawner;
         private Room[,] _spawnedRooms;
         private Room _currentRoom;
         
@@ -20,11 +23,12 @@ namespace Room
         {
             _camera = Camera.main;
             
-            _lastPostion = new Vector2Int(5, 5);
+            _lastPosition = new Vector2Int(5, 5);
             _currentPosition = new Vector2Int(5, 5);
             _changeDirection = Direction.None;
             
             _spawnedRooms = GetComponent<RoomsSpawner>().SpawnedRooms;
+            _enemySpawner = GetComponent<EnemySpawner>();
         }
 
         private void OnEnable()
@@ -57,6 +61,7 @@ namespace Room
 
             if (_currentRoom.isAttacked == true)
             {
+                _enemySpawner.StartSpawn(_currentRoom);
                 _currentRoom.CloseDoor();
                 StartCoroutine(OpenDoor());
             }
@@ -64,8 +69,20 @@ namespace Room
 
         IEnumerator OpenDoor()
         {
-            yield return new WaitForSeconds(5f);
-            _currentRoom.OpenDoor();
+            bool flag = true;
+            
+            yield return new WaitForSeconds(0.5f);
+            
+            while (flag)
+            {
+                if (GameHandler.Instance.IsAttack == false)
+                {
+                    _currentRoom.OpenDoor();
+                    flag = false;
+                }
+
+                yield return null;
+            }
         }
 
         private void SelectedDirection()
@@ -101,8 +118,8 @@ namespace Room
         {
             if (_changeDirection == direction)
             {
-                _spawnedRooms[_lastPostion.x, _lastPostion.y].gameObject.SetActive(false);
-                _lastPostion = _currentPosition;
+                _spawnedRooms[_lastPosition.x, _lastPosition.y].gameObject.SetActive(false);
+                _lastPosition = _currentPosition;
                 _changeDirection = Direction.None;
             }
         }

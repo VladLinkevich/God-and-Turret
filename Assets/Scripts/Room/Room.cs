@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Serialization;
 
@@ -6,6 +7,8 @@ namespace Room
 {
     public class Room : MonoBehaviour
     {
+        [FormerlySerializedAs("SpawnPosirion")] public List<Transform> SpawnPosition; 
+        
         public GameObject DoorUp;
         public GameObject DoorDown;
         public GameObject DoorLeft;

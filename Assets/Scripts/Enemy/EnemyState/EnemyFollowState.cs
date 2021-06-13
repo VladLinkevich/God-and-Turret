@@ -12,12 +12,12 @@ namespace Enemy.EnemyState
 
         public override void EnterState()
         {
-            Debug.Log("Enter Follow");
+            //Debug.Log("Enter Follow");
         }
 
         public override void ExitState()
         {
-            Debug.Log("Exit Follow");
+            //Debug.Log("Exit Follow");
         }
 
         public override void FixedUpdate()

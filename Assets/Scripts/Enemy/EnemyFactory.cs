@@ -34,6 +34,21 @@ namespace Enemy
                 }
             }
         }
+        public Enemy GetFreeEnemy(){
+
+            for (int i = 0; i < 500; ++i)
+            {
+                Enemy enemy = _enemies[UnityEngine.Random.Range(0, _enemies.Count)];
+                if (enemy.gameObject.activeSelf == false)
+                {
+                    return enemy;
+                }
+            }
+            
+            // козел отпушения,
+            // если не найдет за 500 проверок свободного врага будет отдовать первого
+            return _enemies[0];
+        }
     }
 
     [Serializable]
