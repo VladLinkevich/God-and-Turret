@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Bullet;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -10,6 +11,8 @@ namespace Turret
     {
         public Animator animator;
 
+        public Enemy.Enemy Target = null;
+        
         public Transform rightSpawn;
         public Transform leftSpawn;
         public float reloadTime;
@@ -20,6 +23,7 @@ namespace Turret
         private float _rightReload;
         private float _leftReload;
         private bool _isBattle;
+        private bool _rotateFlag = true;
         private void OnEnable()
         {
             Messenger.AddListener(GameEvent.STARTBATTLE, StartBattle);
@@ -89,8 +93,20 @@ namespace Turret
                     SpawnBullet(leftSpawn);
                     _leftReload = Time.time + 100f;
                 }
-                
-                transform.Rotate(new Vector3(0,0,1));
+
+                if (_rotateFlag == true &&
+                    Target != null && Target.gameObject.activeSelf)
+                {
+                    _rotateFlag = false;
+                    
+                    Vector2 pos = Target.transform.position - transform.position;
+                    pos.Normalize();
+                    
+                    float angle = Mathf.Rad2Deg * Mathf.Atan2(pos.x, pos.y);
+
+                    transform.DORotate(new Vector3(0,0, -angle), 0.25f).
+                        OnComplete(() => _rotateFlag = true);
+                }
             }
         }
 

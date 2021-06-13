@@ -44,7 +44,13 @@ namespace Bullet
             if (other.CompareTag("Enemy") == true && _isEnemyBullet == false)
             {
                 Debug.Log("kill enemy");
-                other.GetComponent<Enemy.Enemy>().gameObject.SetActive(false);
+                
+                Enemy.Enemy enemy = other.GetComponentInParent<Enemy.Enemy>();
+
+                if (enemy == true)
+                {
+                    enemy.gameObject.SetActive(false);
+                }
             }
             
             if (other.CompareTag("Turret") == true && _isEnemyBullet == true)

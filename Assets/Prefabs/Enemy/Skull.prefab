@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5031595294460042663}
   m_Layer: 0
   m_Name: DamageCollision
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bafaefb8db9450083b856eacea0cb34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cursor: {fileID: 3174521936847800541}
   PlayerTransform: {fileID: 0}
   TurretTransform: {fileID: 0}
   defaultDistance: 2.5
@@ -132,6 +133,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7674063145037166836, guid: a116c4dca8d8d3a41aef14926efef38b, type: 3}
+    - target: {fileID: 3478670591985368699, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5033269459861646890, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
       propertyPath: _enemy
       value: 
@@ -202,5 +207,10 @@ GameObject:
 --- !u!4 &8983175866847701798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6862599553025483991, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+  m_PrefabInstance: {fileID: 2564376900013592561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3174521936847800541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1123742484287489836, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
   m_PrefabInstance: {fileID: 2564376900013592561}
   m_PrefabAsset: {fileID: 0}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4bbfb01bee41918fe5ca6f0dfc8900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cursor: {fileID: 554665465033960927}
   PlayerTransform: {fileID: 0}
   TurretTransform: {fileID: 0}
   defaultDistance: 1
@@ -107,5 +108,10 @@ PrefabInstance:
 --- !u!1 &9017401090863032888 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8434954153572319435, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+  m_PrefabInstance: {fileID: 588498862037936883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &554665465033960927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1123742484287489836, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
   m_PrefabInstance: {fileID: 588498862037936883}
   m_PrefabAsset: {fileID: 0}
