@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5782762071615661119}
   - component: {fileID: 4435260035082356996}
   - component: {fileID: 7702727286948098327}
+  - component: {fileID: 3424168917180973137}
   m_Layer: 8
   m_Name: Image
   m_TagString: Turret
@@ -109,6 +110,85 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.80471015, y: 0.75136375}
   m_EdgeRadius: 0
+--- !u!95 &3424168917180973137
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336708418094971783}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 56cd66928f6739e4983859fa8ee8174c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1658330848493613489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9136457364882000646}
+  m_Layer: 0
+  m_Name: 'LeftSpawn '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9136457364882000646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658330848493613489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.175, y: 0.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3844003778912538464}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2025430986697254572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 98118388499300727}
+  m_Layer: 0
+  m_Name: RightSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &98118388499300727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025430986697254572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.175, y: 0.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3844003778912538464}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3844003778912538465
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,6 +199,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3844003778912538464}
   - component: {fileID: 9126020789193635246}
+  - component: {fileID: 6082269707762633550}
+  - component: {fileID: 4839917023603345260}
   m_Layer: 8
   m_Name: Turret
   m_TagString: Turret
@@ -139,6 +221,8 @@ Transform:
   m_Children:
   - {fileID: 5782762071615661119}
   - {fileID: 2010095599542524880}
+  - {fileID: 98118388499300727}
+  - {fileID: 9136457364882000646}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -155,6 +239,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collider: {fileID: 7702727286948098327}
+--- !u!95 &6082269707762633550
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844003778912538465}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4839917023603345260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844003778912538465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d4d4e4f1849ec48942043a466523ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3424168917180973137}
+  rightSpawn: {fileID: 98118388499300727}
+  leftSpawn: {fileID: 9136457364882000646}
+  reloadTime: 0.1
 --- !u!1 &7702309699315054442
 GameObject:
   m_ObjectHideFlags: 0

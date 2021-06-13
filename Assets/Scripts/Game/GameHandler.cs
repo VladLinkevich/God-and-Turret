@@ -28,8 +28,12 @@ namespace Game
 
         public void AddActiveEnemy(Enemy.Enemy enemy)
         {
-            _isAttack = true;
-            
+            if (_isAttack == false)
+            {
+                _isAttack = true;
+                Messenger.Broadcast(GameEvent.STARTBATTLE);
+            }
+
             _currentEnemies.Add(enemy);
         }
 
@@ -40,6 +44,7 @@ namespace Game
             if (_currentEnemies.Count == 0)
             {
                 _isAttack = false;
+                Messenger.Broadcast(GameEvent.STOPBATTLE);
             }
         }
         

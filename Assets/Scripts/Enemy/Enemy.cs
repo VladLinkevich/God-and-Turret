@@ -16,15 +16,21 @@ namespace Enemy
         protected Transform _target;
 
         public Transform Target => _target;
+        
+        private bool _firstStart = true;
 
         public void OnEnable()
         {
-            GameHandler.Instance.AddActiveEnemy(this);
+            if (_firstStart == false)
+                GameHandler.Instance.AddActiveEnemy(this);
         }
 
         private void OnDisable()
         {
-            GameHandler.Instance.RemoveActiveEnemy(this);
+            if (_firstStart == false)
+                GameHandler.Instance.RemoveActiveEnemy(this);
+            else
+                _firstStart = false;
         }
 
         public abstract void Attack(Vector3 target);
