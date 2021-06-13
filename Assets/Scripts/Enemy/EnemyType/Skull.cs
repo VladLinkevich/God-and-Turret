@@ -7,6 +7,10 @@ namespace Enemy.EnemyType
     public class Skull : Enemy
     {
         public override EnemyType Type => EnemyType.Skull;
+        public override void Attack(Vector3 target)
+        {
+            
+        }
 
         public void OnEnable()
         {

@@ -14,5 +14,7 @@ namespace Enemy
         protected Transform _target;
 
         public Transform Target => _target;
+
+        public abstract void Attack(Vector3 target);
     }
 }

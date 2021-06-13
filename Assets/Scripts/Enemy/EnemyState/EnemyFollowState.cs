@@ -1,17 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace Enemy.EnemyState
 {
     public class EnemyFollowState : EnemyState
     {
-        public NavMeshAgent MeshAgent;
-        
+        public float Velocity;
+
+        private CharacterController _controller;
+
         public override void EnterState()
         {
-            MeshAgent.updateRotation = false;
-            MeshAgent.updateUpAxis = false;
-            
             Debug.Log("Enter Follow");
         }
 
@@ -22,7 +22,18 @@ namespace Enemy.EnemyState
 
         public override void FixedUpdate()
         {
-            MeshAgent.SetDestination(_enemy.Target.position);
+            float distance =
+                Vector3.Distance(transform.position, _enemy.Target.position);
+
+            if (distance > _enemy.defaultDistance)
+            {
+                transform.position = Vector3.MoveTowards(
+                    transform.position, _enemy.Target.position, Velocity);
+            }
+            else
+            {
+                _stateHandler.ChangeState(EnemyStateEnum.Attack);
+            }
         }
     }
 }

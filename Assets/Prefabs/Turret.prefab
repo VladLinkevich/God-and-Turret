@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5782762071615661119}
   - component: {fileID: 4435260035082356996}
   - component: {fileID: 7702727286948098327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3844003778912538464}
   - component: {fileID: 9126020789193635246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 2010095599542524880}
   - component: {fileID: 3864003563353259750}
   - component: {fileID: 7408230759963402934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TouchCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
