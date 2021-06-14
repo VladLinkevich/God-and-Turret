@@ -49,7 +49,7 @@ namespace Bullet
 
                 if (enemy == true)
                 {
-                    enemy.gameObject.SetActive(false);
+                    enemy.RemoveHealth();
                 }
             }
             

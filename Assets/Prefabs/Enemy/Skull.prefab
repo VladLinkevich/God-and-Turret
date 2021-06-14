@@ -93,10 +93,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bafaefb8db9450083b856eacea0cb34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitEnemySound: {fileID: 897791487815992321}
+  DestroyEnemySound: {fileID: 5878670878763534322}
   Cursor: {fileID: 3174521936847800541}
   PlayerTransform: {fileID: 0}
   TurretTransform: {fileID: 0}
   defaultDistance: 2.5
+  maxHeath: 4
   AttackVelocity: 7
 --- !u!1001 &2564376900013592561
 PrefabInstance:
@@ -133,9 +136,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7674063145037166836, guid: a116c4dca8d8d3a41aef14926efef38b, type: 3}
+    - target: {fileID: 2091156077921784793, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3478670591985368699, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5033269459861646890, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
       propertyPath: _enemy
@@ -209,8 +216,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6862599553025483991, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
   m_PrefabInstance: {fileID: 2564376900013592561}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &897791487815992321 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3450856473102601200, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+  m_PrefabInstance: {fileID: 2564376900013592561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3174521936847800541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1123742484287489836, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+  m_PrefabInstance: {fileID: 2564376900013592561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5878670878763534322 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8215484021839579139, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
   m_PrefabInstance: {fileID: 2564376900013592561}
   m_PrefabAsset: {fileID: 0}

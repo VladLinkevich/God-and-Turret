@@ -1,4 +1,5 @@
 ﻿using System;
+using UI;
 using UnityEngine;
 
 namespace Enemy
@@ -11,7 +12,7 @@ namespace Enemy
 
             if (other.CompareTag("Turret"))
             {
-                Debug.Log("Damage");
+                HealthHandler.Instance.RemoveHealth();
             }
         }
     }

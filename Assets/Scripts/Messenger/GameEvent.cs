@@ -14,4 +14,5 @@ public static class GameEvent
     public const string STARTBATTLE = "STARTBATLE";
     public const string STOPBATTLE = "STOPBATLE";
     public const string SETNEWCURSOR = "SETNEWCURSOR";
+    public const string GAMEOVER = "GAMEOVER";
 }

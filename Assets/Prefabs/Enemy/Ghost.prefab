@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4bbfb01bee41918fe5ca6f0dfc8900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitEnemySound: {fileID: 2866861348814151939}
+  DestroyEnemySound: {fileID: 8802716104139694832}
   Cursor: {fileID: 554665465033960927}
   PlayerTransform: {fileID: 0}
   TurretTransform: {fileID: 0}
   defaultDistance: 1
+  maxHeath: 4
 --- !u!1001 &588498862037936883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113,5 +116,15 @@ GameObject:
 --- !u!1 &554665465033960927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1123742484287489836, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+  m_PrefabInstance: {fileID: 588498862037936883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2866861348814151939 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3450856473102601200, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
+  m_PrefabInstance: {fileID: 588498862037936883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8802716104139694832 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8215484021839579139, guid: 9aeea451feafdbc4db918cdb463ad59f, type: 3}
   m_PrefabInstance: {fileID: 588498862037936883}
   m_PrefabAsset: {fileID: 0}

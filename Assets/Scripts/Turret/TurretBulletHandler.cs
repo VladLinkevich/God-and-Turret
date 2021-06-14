@@ -10,7 +10,8 @@ namespace Turret
     public class TurretBulletHandler : MonoBehaviour
     {
         public Animator animator;
-
+        [FormerlySerializedAs("damageSound")] public AudioSource shootSound;
+        
         public Enemy.Enemy Target = null;
         
         public Transform rightSpawn;
@@ -24,6 +25,8 @@ namespace Turret
         private float _leftReload;
         private bool _isBattle;
         private bool _rotateFlag = true;
+        private static readonly int Damage = Animator.StringToHash("TakeDamage");
+
         private void OnEnable()
         {
             Messenger.AddListener(GameEvent.STARTBATTLE, StartBattle);
@@ -44,7 +47,9 @@ namespace Turret
         private void StartBattle()
         {
             _isBattle = true;
-            animator.SetTrigger(Attack);
+            
+            if (animator == true)
+                animator.SetTrigger(Attack);
 
             _rightReload = Time.time;
             _leftReload = Time.time + reloadTime / 2;
@@ -57,9 +62,17 @@ namespace Turret
         private void StopBattle()
         {
             _isBattle = false;
-            animator.SetTrigger(Idle);
+            
+            if (animator == true)
+                animator.SetTrigger(Idle);
         }
 
+        public void TakeDamage()
+        {
+            if (animator == true)
+                animator.SetTrigger(Damage);
+        }
+        
         private IEnumerator BulletSpawn(Transform spawnTransform, float startDelay)
         {
             yield return new WaitForSeconds(startDelay);
@@ -120,6 +133,8 @@ namespace Turret
             bulletTransform.position = spawnTransform.position;
             
             bullet.gameObject.SetActive(true);
+            
+            shootSound.Play();
         }
     }
 }
